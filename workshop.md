@@ -36,8 +36,10 @@ The deployment which is written in [Cloudformation](https://aws.amazon.com/cloud
 1. Sign into you AWS account.
 2. Go to the EC2 Console
 3. Choose Virginia (us-east-1) as your region
-4. Create a new key pair
-   ![create_keypair](./workshop-11-02-20/create_keypair.png)
+4. Create a new key pair  
+   
+   ![create_keypair](./workshop-11-02-20/create_keypair.png)   
+   
    ![create_keypair2](./workshop-11-02-20/create_keypair2.png)
 5. Name the key pair   
    Choose the format that suits your needs (pem = Linux / ppk = Windows)
