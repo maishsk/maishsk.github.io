@@ -17,3 +17,4 @@ There is an AWS reference deployment for Drupal available [here](https://aws.ama
 Due to time constraints (the full deployment takes over 45 minutes due to the cloudfront distribution - the session today will deploy a reduced version of the architecture.)
 
 ![drupal_deployment](drupal_deployment.png)
+ 
