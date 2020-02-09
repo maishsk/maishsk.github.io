@@ -25,3 +25,7 @@ The deployment which is written in [Cloudformation](https://aws.amazon.com/cloud
 3. Two NAT Gateways with be deployed in the public subnets
 4. An IGW will be attached to the VPC
 5. In each of the public subnets, a bastion host will be deployed (for redundancy)
+6. An RDS Aurora MySQL instance will be deployed across two availability zones
+7. An EFS file system will be deployed in the VPC - and the Drupal instances will use this as their backend storage between the instances
+8. An autoscaling group - for the Drupal instances
+9. An Application Load Balancer that will front the Drupal application
