@@ -8,7 +8,7 @@ Welcome to the minimal Service Catalog session. Today we are going dive deeper i
 2. Create a Service Catalog item
 3. Tie the two together
 
-### Create a Application deployment
+### 1. Create a Application deployment
 
 The workload that was chosen for this workshop was something that is relevant to the company and its upcoming workloads - Drupal.
 
@@ -29,3 +29,6 @@ The deployment which is written in [Cloudformation](https://aws.amazon.com/cloud
 7. An EFS file system will be deployed in the VPC - and the Drupal instances will use this as their backend storage between the instances
 8. An autoscaling group - for the Drupal instances
 9. An Application Load Balancer that will front the Drupal application
+
+### 2. Create a Service Catalog Item
+
