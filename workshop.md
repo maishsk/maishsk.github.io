@@ -54,7 +54,7 @@ The deployment which is written in [Cloudformation](https://aws.amazon.com/cloud
    
    ![availability_zones](./workshop-11-02-20/availability_zones.png)
 5. Leave the CIDR blocks and subnet configuration defaults
-6. Choose the key pair that you create in the previous steps
+6. Choose the key pair that you created in the previous steps
    
    ![key_pair](./workshop-11-02-20/key_pair.png)
 7. For the purpose of this workshop - we will allow access to all IP addresses. In real life this should be scoped to the minimum range possible - usually your company's public IP address range.  
