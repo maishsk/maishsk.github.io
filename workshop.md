@@ -65,36 +65,37 @@ The deployment which is written in [Cloudformation](https://aws.amazon.com/cloud
 8. Since we will not be using Route53 - leave the `Route53 Hosted Zone ID` empty  
    
    ![route53](./workshop-11-02-20/route53.png)
-9.  Enter a password for your Drupal MySQL database Admin user 
+9.  Enter a password for your Drupal MySQL database Admin user
+    
+    ![db_password](./workshop-11-02-20/db_password.png)
 
-   ![db_password](./workshop-11-02-20/db_password.png)
-11. Since this will be deployed across multiple availability Zone - leave the `Multi-AZ Database` value as `true`
+10. Since this will be deployed across multiple availability Zone - leave the `Multi-AZ Database` value as `true`
     
     ![multi_az](./workshop-11-02-20/multi_az.png)
-12. Enter a valid email for the `Drupal Site Admin Email`
+11. Enter a valid email for the `Drupal Site Admin Email`
 
     ![drupal_email](./workshop-11-02-20/drupal_email.png)
-13. Enter a password for your Drupal Administrative Interface 
+12. Enter a password for your Drupal Administrative Interface 
     
     ![drupal_password](./workshop-11-02-20/drupal_password.png)
-14. Enter a password for your Drupal MySQL application user 
+13. Enter a password for your Drupal MySQL application user 
     
     ![drupal_app_password](./workshop-11-02-20/drupal_app_password.png)
-15. Enter an email address for AutoScaling Notifications
+14. Enter an email address for AutoScaling Notifications
     
     ![asg_email](./workshop-11-02-20/asg_email.png)
-16. Set Elasticache to `false`
+15. Set Elasticache to `false`
     
     ![elasticache_false](./workshop-11-02-20/elasticache_false.png)
-17. Set `Enable Cloudfront` to `false`
+16. Set `Enable Cloudfront` to `false`
 
     ![cloudfront_false](./workshop-11-02-20/cloudfront_false.png)
-18. Click `Next` at the bottom of the page
-19. Click `Next` again at the bottom of the page
-20. Check the two boxes to confirm that you allow the creation of IAM roles.
+17. Click `Next` at the bottom of the page
+18. Click `Next` again at the bottom of the page
+19. Check the two boxes to confirm that you allow the creation of IAM roles.
 
     ![iam_confirm](./workshop-11-02-20/iam_confirm.png)
-21. Click `Create Stack`
+20. Click `Create Stack`
 
 The process can take about 15-20 minutes to complete. If you would like you can go to the [source code](https://github.com/aws-quickstart/quickstart-drupal/tree/master/templates) for this deployment and go through the Cloudformation templates to dive deeper into each of the stacks that are being built.
 
