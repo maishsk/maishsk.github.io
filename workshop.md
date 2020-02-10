@@ -116,3 +116,89 @@ You can log into the Drupal deployment with the credentials you used to deploy t
 > **If you would like you can continue onto the next stage without waiting for the stack to complete.**
 
 ## 2. Create a Service Catalog Item
+
+A Service Catalog is comprised of a portfolio of Products.
+
+For example a portfolio would be Content_Management and one of the products under that portfolio would be Drupal.
+
+1. Go to the [Service catalog console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1&isSceuc=false)
+2. Click on Portfolios
+   
+   ![portfolio](./workshop-11-02-20/portfolio.png)
+3. Click on Create Portfolio
+4. Create a portfolio
+   
+   ![portfolio_create](./workshop-11-02-20/portfolio_create.png)
+5. Click on Products
+   
+   ![products](./workshop-11-02-20/products.png)
+
+6. Upload a New Product
+7. Fill in the details
+   
+   ![product_details](./workshop-11-02-20/product_details.png)
+
+8. Under Version Details - choose `Use a CloudFormation Template`
+9. Paste this URL - `https://aws-quickstart.s3.amazonaws.com/quickstart-drupal/templates/drupal-master.template`
+10. Enter `Version Title` - 1.0
+11. Optional - Enter the rest of the details of the form
+12. Click `Review`
+13. Click on `Create Product`
+14. A new product will be created
+    
+    ![new_product](./workshop-11-02-20/new_product.png)
+
+The Product need to be assigned to a Portfolio
+
+15. Click on the product name
+16. Click on Portfolios and then `Add product to portfolio`
+    
+    ![add_to_portfolio](./workshop-11-02-20/add_to_portfolio.png)
+User, a Group or a Role.
+17. Check the `Content_Management` Portfolio and `Add Product to Portfolio`
+    
+    ![added_portfolio](./workshop-11-02-20/added_portfolio.png)
+
+18. Click on `Products`
+    
+    ![products_list](./workshop-11-02-20/products_list.png)
+
+    Why are there no products listed? 
+
+    The reason is because the product has not been associated with an identity. That identity can be a `User`, `Group` or a `Role`
+
+19. Click on `Portfolios List` under `Admin`
+
+    ![portfolios_list](./workshop-11-02-20/portfolios_list.png)
+
+20. Click on `Content_Management` Portfolio
+21. Click on the `Groups, roles, and users` tab
+22. Click on `Add groups, roles, users`
+    
+    ![groups_roles](./workshop-11-02-20/groups_roles.png)
+
+23. Add either the role, user or group you would like associate with this portfolio.
+    
+    Please not you cannot associate a product to a user, only a portfolio of products. Take this into account when designing your service catalog.
+
+24. Click on `Products`
+    
+    ![products_list](./workshop-11-02-20/products_list.png)
+
+25. You should see the `Drupal` product
+    
+    ![yey_products](./workshop-11-02-20/yey_products.png)
+
+26. Click on the menu (...) and `Launch Product'
+    
+    ![launch_product_drupal](./workshop-11-02-20/launch_product_drupal.png)
+
+27. Give your product a name and chose a version
+
+    ![name_version](./workshop-11-02-20/name_version.png)
+
+28. Click `Next`
+29. You will be presented with all of the same parameters that were present in CloudFormation deployment in section #1. Fill them in as per the instructions above.
+
+
+# Thanks for participating!!
