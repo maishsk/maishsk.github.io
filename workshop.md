@@ -156,7 +156,7 @@ The Product need to be assigned to a Portfolio
 16. Click on Portfolios and then `Add product to portfolio`
     
     ![add_to_portfolio](./workshop-11-02-20/add_to_portfolio.png)
-User, a Group or a Role.
+
 17. Check the `Content_Management` Portfolio and `Add Product to Portfolio`
     
     ![added_portfolio](./workshop-11-02-20/added_portfolio.png)
